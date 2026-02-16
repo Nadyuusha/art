@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title
+            @text="title ? `${title} · Painter's Gallery` : `Painter's Gallery`"
+        ></title>
+        <meta name="description" :content="description" webc:if="description" />
+        <link rel="stylesheet" href="/styles.css" webc:keep />
+    </head>
+    <body>
+        <header class="site-header">
+            <a class="site-title" href="/">Painter's Gallery</a>
+            <nav class="site-nav">
+                <a href="/">Home</a>
+                <a href="/about/">About</a>
+                <a href="/contact/">Contact</a>
+            </nav>
+        </header>
+
+        <main class="site-main" @html="content"></main>
+
+        <footer class="site-footer">
+            <p>
+                Artwork © 2026 Nadezhda Cherniadeva<br />
+                Licensed under CC BY-NC-ND 4.0<br />
+                No commercial use. No derivatives.
+            </p>
+        </footer>
+    </body>
+</html>

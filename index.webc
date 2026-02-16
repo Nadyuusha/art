@@ -1,0 +1,35 @@
+---
+title: A Minimal Painter's Gallery
+description: Quiet rooms of color, light, and form.
+layout: base
+---
+
+<h2 style="margin-left: 10px">Gallery</h2>
+<ul
+    class="gallery-grid"
+    webc:if="collections.paintings && collections.paintings.length > 0"
+>
+    <li class="gallery-card" webc:for="painting of collections.paintings">
+        <a class="gallery-link" :href="painting.url">
+            <div>
+                <img
+                    :src="`/images/${painting.fileSlug}.jpg`"
+                    :alt="painting.data.title"
+                    loading="lazy"
+                />
+            </div>
+            <div class="gallery-meta">
+                <h3 class="gallery-title" @text="painting.data.title"></h3>
+                <p class="gallery-details">
+                    <span @text="painting.data.medium"></span> —
+                    <span @text="painting.data.year"></span>
+                </p>
+            </div>
+        </a>
+    </li>
+</ul>
+
+<p webc:if="!collections.paintings || collections.paintings.length === 0">
+    No paintings yet. Add markdown files in the
+    <code>paintings</code> collection.
+</p>
