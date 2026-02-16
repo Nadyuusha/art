@@ -7,4 +7,8 @@ export default function (eleventyConfig) {
   eleventyConfig.addCollection("paintings", (collection) =>
     collection.getFilteredByTag("paintings"),
   );
+
+  return {
+    pathPrefix: process.env.NODE_ENV === "production" ? "/art/" : "",
+  };
 }
