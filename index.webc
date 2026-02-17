@@ -10,7 +10,7 @@ layout: base
     webc:if="collections.paintings && collections.paintings.length > 0"
 >
     <li class="gallery-card" webc:for="painting of collections.paintings">
-        <a class="gallery-link" :href="painting.url">
+        <a class="gallery-link" :href="url(painting.url)">
             <div>
                 <img
                     :src="url(`/images/${painting.fileSlug}.jpg`)"
