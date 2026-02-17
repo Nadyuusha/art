@@ -14,7 +14,7 @@ layout: base
 
 A quiet harbor at dusk, where the water holds the last light.
 
-![Silent Harbor](/images/silent-harbor.jpg)
+![Silent Harbor](../images/silent-harbor.jpg)
 
 ## Notes
 

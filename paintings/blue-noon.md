@@ -12,7 +12,7 @@ layout: base
 
 # Blue Noon
 
-![Blue Noon](/images/blue-noon.jpg)
+![Blue Noon](../images/blue-noon.jpg)
 
 Midday light flattens the room, leaving only cool planes and quiet air.
 

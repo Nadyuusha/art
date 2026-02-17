@@ -12,7 +12,7 @@ layout: base
 
 # Ochre Morning
 
-![Ochre Morning](/images/ochre-morning.jpg)
+![Ochre Morning](../images/ochre-morning.jpg)
 
 A soft morning light drifts across a bare table, warming the room.
 

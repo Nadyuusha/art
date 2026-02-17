@@ -12,7 +12,7 @@ layout: base
 
 # Umbra Light
 
-![Umbra Light](/images/umbra-light.jpg)
+![Umbra Light](../images/umbra-light.jpg)
 
 A soft beam slips through a shaded room, holding the quiet edge of contrast.
 

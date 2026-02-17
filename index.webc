@@ -13,7 +13,7 @@ layout: base
         <a class="gallery-link" :href="painting.url">
             <div>
                 <img
-                    :src="`/images/${painting.fileSlug}.jpg`"
+                    :src="url(`/images/${painting.fileSlug}.jpg`)"
                     :alt="painting.data.title"
                     loading="lazy"
                 />
